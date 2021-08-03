@@ -2,4 +2,4 @@
 
 Creating a Maze game, where the objective is to move\
 towards the goal collecting as many coins as possible\
-while also avoinding traps.
+while also avoiding traps.
