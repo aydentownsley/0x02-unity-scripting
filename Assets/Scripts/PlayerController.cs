@@ -17,13 +17,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (Input.GetKey("w"))
+        if (Input.GetKey("w") || Input.GetKey("up"))
             rb.AddForce(0, 0, speed * Time.deltaTime);
-        if (Input.GetKey("s"))
+        if (Input.GetKey("s") || Input.GetKey("left"))
             rb.AddForce(0, 0, -1 * speed * Time.deltaTime);
-        if (Input.GetKey("a"))
+        if (Input.GetKey("a") || Input.GetKey("down"))
         rb.AddForce(-1 * speed * Time.deltaTime, 0, 0);
-        if (Input.GetKey("d"))
+        if (Input.GetKey("d") || Input.GetKey("right"))
         rb.AddForce(speed * Time.deltaTime, 0, 0);
 
         if (health == 0)
